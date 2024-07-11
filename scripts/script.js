@@ -22,6 +22,9 @@ const wordDefinition = document.getElementById('word-definitions');
 
 const wordNotFound = document.getElementById('word-not-found');
 
+const backFont = document.getElementById('font-family__selector');
+const fontSect = document.querySelector('.meaning');
+
 let currentWordData = {};
 
 navbarFontSelector.addEventListener('click', function() {
@@ -75,6 +78,7 @@ const changeColorTheme = theme => {
             darkMoonIcon.classList.remove('hidden');
  
             searchBar.style.backgroundColor = '#1F1F1F';
+            backFont.style.backgroundColor = '#1F1F1F';
             
             themeSelector.checked = true;
 
@@ -93,6 +97,7 @@ const changeColorTheme = theme => {
             darkMoonIcon.classList.add('hidden');
   
             searchBar.style.backgroundColor = '#F4F4F4';
+            backFont.style.backgroundColor = '#F4F4F4';
 
     
             let sourceURL = document.querySelector('.source a');

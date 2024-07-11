@@ -218,6 +218,11 @@ align-items: center;
     background: var(--greyOne);
     padding-left: 1.5rem;
     justify-self: flex-start;
+
+    background-image: url("../assets/images/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 605px;
+    
 }
 
 #search__bar:focus {
@@ -405,5 +410,11 @@ align-items: center;
 
     #search {
         width: 90%;
+    }
+
+    #search__bar {
+        background-image: url("../assets/images/icon-search.svg");
+        background-repeat: no-repeat;
+        background-position: 315px;
     }
 }
